@@ -1,0 +1,8 @@
+/* className = profile,  description,   avatar  name  tag  location stats  label quantity  */
+
+.profile {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: brown;
+}
