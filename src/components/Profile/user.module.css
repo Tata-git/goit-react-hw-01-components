@@ -1,8 +1,67 @@
-/* className = profile,  description,   avatar  name  tag  location stats  label quantity  */
+/* className = profile,  description,   avatar  name  opacity stats  label quantity  */
 
 .profile {
-  margin-top: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 360px;
+  margin: 0 auto 40px auto;
+  outline: 2px solid rgba(119, 115, 115, 0.144);
+
   text-align: center;
-  text-transform: uppercase;
-  border-color: brown;
+  color: #000;
+}
+
+.description {
+  margin: 40px auto 20px auto;
+}
+
+.avatar {
+  background-color: azure;
+  width: 180px;
+  height: 100%;
+  border-radius: 50%;
+}
+.name {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.opacity {
+  opacity: 0.6;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.stats {
+  background-color: rgba(219, 228, 228, 0.514);
+  border-top: 2px solid rgba(119, 115, 115, 0.144);
+
+  margin: 0;
+  padding-left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.statsItem {
+  /* outline: 2px solid tomato; */
+  list-style-type: none;
+  padding: 10px;
+}
+
+li:not(:last-child) {
+  border-right: 2px solid rgba(119, 115, 115, 0.144);
+}
+
+.label {
+  display: block;
+  opacity: 0.6;
+  font-size: 16px;
+  font-weight: 500;
+}
+.quantity {
+  font-weight: 500;
 }

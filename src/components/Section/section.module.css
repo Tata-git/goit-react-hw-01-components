@@ -1,0 +1,10 @@
+.section {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+
+  font-size: 16;
+  background-color: rgb(247, 244, 229);
+  margin: 0 auto;
+  color: rgb(12, 11, 11);
+}

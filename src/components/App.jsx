@@ -1,3 +1,4 @@
+import { Section } from 'components/Section/Section';
 import { Profile } from 'components/Profile/Profile';
 import { FriendList } from 'components/FriendList/FriendList';
 import { Statistics } from 'components/Statistics/Statistics';
@@ -8,18 +9,10 @@ import friends from 'components/FriendList/friends.json';
 import data from 'components/Statistics/data.json';
 import transactions from 'components/TransactionHistory/transactions.json';
 
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 16,
-        color: '#010101',
-      }}
-    >
+    <Section>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -27,9 +20,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <FriendList friends={friends} />
       <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />;
-    </div>
+    </Section>
   );
 };

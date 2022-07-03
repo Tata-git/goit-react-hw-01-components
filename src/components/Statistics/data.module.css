@@ -1,1 +1,36 @@
-/* className = statistics,  title,   profistat-listle  item  label  percentage  */
+/* className = statistics,  title,   listle  item  label  percentage  */
+
+.statistics {
+  background-color: white;
+  width: 360px;
+  margin: 0 auto 40px auto;
+  padding-top: 20px;
+  outline: 2px solid rgba(119, 115, 115, 0.144);
+  
+  text-align: center;
+}
+.listle {
+  padding-left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.item {
+  /* outline: 1px solid tomato; */
+  list-style-type: none;
+  padding: 10px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.percentage {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 6px;
+}
