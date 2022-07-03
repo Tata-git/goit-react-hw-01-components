@@ -1,1 +1,34 @@
-/* className = transactionHistory  , thead */
+/* className = transactionHistory  , thead tr td th tdLeft */
+
+.transactionHistory {
+  width: 360px;
+  margin: 0 auto 40px auto;
+
+  outline: 2px solid rgba(189, 71, 71, 0.144);
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.thead {
+  background-color: rgb(52, 187, 187);
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+.tr {
+  text-transform: capitalize;
+  text-align: center;
+  color: grey;
+  background-color: rgb(226, 226, 222);
+}
+.td {
+  padding: 10px;
+}
+.th {
+  padding: 15px;
+}
+.tdLeft {
+  text-align: left;
+  padding-left: 10px;
+}

@@ -5,10 +5,10 @@ export const TransactionHistory = ({ items }) => {
   return (
     <table className={css.transactionHistory}>
       <thead className={css.thead}>
-        <tr className={css.tr}>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+        <tr>
+          <th className={css.th}>Type</th>
+          <th className={css.th}>Amount</th>
+          <th className={css.th}>Currency</th>
         </tr>
       </thead>
 
@@ -16,9 +16,9 @@ export const TransactionHistory = ({ items }) => {
         {items.map(({ id, type, amount, currency }) => {
           return (
             <tr className={css.tr} key={id}>
-              <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
+              <td className={css.tdLeft}>{type}</td>
+              <td className={css.td}>{amount}</td>
+              <td className={css.td}>{currency}</td>
             </tr>
           );
         })}
@@ -35,5 +35,5 @@ TransactionHistory.propTypes = {
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };

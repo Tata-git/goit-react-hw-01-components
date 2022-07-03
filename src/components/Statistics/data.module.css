@@ -2,11 +2,13 @@
 
 .statistics {
   background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   width: 360px;
   margin: 0 auto 40px auto;
   padding-top: 20px;
   outline: 2px solid rgba(119, 115, 115, 0.144);
-  
+
   text-align: center;
 }
 .listle {
@@ -14,6 +16,7 @@
 
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .item {
   /* outline: 1px solid tomato; */

@@ -1,4 +1,25 @@
-.item {
-  display: flex;
+/* className  = online offline avatar, name  */
+
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  padding-right: 15px;
 }
-/* className  = status  avatar, name  */
+.offline {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: red;
+  padding-right: 15px;
+}
+.name {
+  font-weight: bold;
+  font-size: 24px;
+}
+.avatar {
+  width: 50px;
+  height: 100%;
+  padding-right: 15px;
+}

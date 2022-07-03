@@ -4,15 +4,18 @@ import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
-    <div>
-      <ul className={css.friendList}>
-        {friends.map(({ id, isOnline, avatar, name }) => (
-          <li className={css.item}>
-            <Friend key={id} status={isOnline} avatar={avatar} name={name} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={css.friendList}>
+      {friends.map(({ id, isOnline, avatar, name }) => (
+        <li className={css.item}>
+          <Friend
+            key={id}
+            status={isOnline}
+            avatar={avatar}
+            name={name}
+          />
+        </li>
+      ))}
+    </ul>
   );
 };
 
