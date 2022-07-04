@@ -5,14 +5,16 @@
   height: 15px;
   border-radius: 50%;
   background-color: green;
-  padding-right: 15px;
+  background-size: contain;
+  margin-right: 15px;
 }
 .offline {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  color: red;
-  padding-right: 15px;
+  background-color: red;
+    background-size: contain;
+  margin-right: 15px;
 }
 .name {
   font-weight: bold;

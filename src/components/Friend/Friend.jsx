@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './friend.module.css';
 
 export const Friend = ({ isOnline, avatar, name }) => {
-    const status = isOnline ? css.online : css.offline;
+  const status = isOnline ? css.online : css.offline;
   return (
     <>
       <span className={status}>{isOnline}</span>
